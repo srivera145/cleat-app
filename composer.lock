@@ -4,8 +4,70 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3d664e6abcf67ec6001469238f73c82",
+    "content-hash": "87a099e31de82dbc4c41a1a9ab1c583d",
     "packages": [
+        {
+            "name": "echodial/cleat",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../cleat-package",
+                "reference": "25d2d3dea560d6a3a24a362b86bb7838cb825d94"
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-pdo": "*",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "echodial/deck": "^0.1.3",
+                "phpunit/phpunit": "^11.5"
+            },
+            "suggest": {
+                "ext-pdo_mysql": "Cleat stores all billing state in MySQL 8 or MariaDB 10.11+."
+            },
+            "bin": [
+                "bin/cleat-run.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cleat\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Cleat\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EchoDial LLC"
+                }
+            ],
+            "description": "Self-hosted billing and invoicing for PHP: subscriptions, invoices, hosted pay pages and payment links over Authorize.net, with all billing state in your own MySQL/MariaDB.",
+            "keywords": [
+                "authorize.net",
+                "billing",
+                "invoicing",
+                "keel",
+                "payments",
+                "subscriptions"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
         {
             "name": "echodial/deck",
             "version": "v0.1.3",
@@ -2448,7 +2510,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "echodial/cleat": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
