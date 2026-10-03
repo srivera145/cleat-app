@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87a099e31de82dbc4c41a1a9ab1c583d",
+    "content-hash": "212eed2b168378e238e91b280d48d0d3",
     "packages": [
         {
             "name": "echodial/cleat",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../cleat-package",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/srivera145/cleat.git",
                 "reference": "25d2d3dea560d6a3a24a362b86bb7838cb825d94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/srivera145/cleat/zipball/25d2d3dea560d6a3a24a362b86bb7838cb825d94",
+                "reference": "25d2d3dea560d6a3a24a362b86bb7838cb825d94",
+                "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
@@ -36,16 +42,7 @@
                     "Cleat\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Cleat\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "phpunit"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -63,10 +60,11 @@
                 "payments",
                 "subscriptions"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/srivera145/cleat/issues",
+                "source": "https://github.com/srivera145/cleat/tree/v0.1.0"
+            },
+            "time": "2026-10-02T23:30:59+00:00"
         },
         {
             "name": "echodial/deck",
@@ -2510,9 +2508,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "echodial/cleat": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
